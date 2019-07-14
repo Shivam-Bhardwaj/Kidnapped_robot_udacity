@@ -17,7 +17,7 @@ The whole algorithm repeats at run time when the car is moving and new location 
 
 Each major step involved in implementation is illustrated below:
 
-![](/home/shivam/workspace/UDACITY_PARTICLE_FILTER/solutions/1/image-resources/particle-filter-localization-algorithm.png)
+![](assets/particle-filter-localization-algorithm.png)
 
 The C++ program for localization was implemented using following major steps:
 

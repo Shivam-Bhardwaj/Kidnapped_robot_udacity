@@ -220,7 +220,7 @@ void ParticleFilter::updateWeights(double sensor_range, double std_landmark[],
             double obs_w = (1 / (2 * M_PI * s_x * s_y)) *
                            exp(-(pow(pr_x - o_x, 2) / (2 * pow(s_x, 2)) + (pow(pr_y - o_y, 2) / (2 * pow(s_y, 2)))));
 
-            // product of this obersvation weight with total observations weight
+            // product of this observation weight with total observations weight
             particles[i].weight *= obs_w;
         }
     }

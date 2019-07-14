@@ -28,6 +28,8 @@ The C++ program for localization was implemented using following major steps:
 
 ![prediction-equations](https://raw.githubusercontent.com/sohonisaurabh/CarND-Kidnapped-Vehicle-Project/master/image-resources/prediction-equations.png)
 
+![](/home/shivam/workspace/Kidnapped_robot_udacity/assets/prediction-equations.png)
+
 4. After prediction step, the vehicle implements **Update** step. In this step, particles are assigned with weights corresponding to their prediction. The process is stated below:
 
    a. The vehicle uses LIDAR to sense its distance from landmarks and predict the location of landmarks as observed. This is received as a list of x, y coordinates along with the noise mapped as standard deviation in X (σx) and Y (σy) axes. Since, the LIDAR sensor is installed on the robot, these observations are received in x, y coordinate axes relative to the direction of motion of vehicle. This is shown below:
@@ -42,6 +44,8 @@ The C++ program for localization was implemented using following major steps:
 
    b. To map the observations into global coordinate system, a transformation is done involving translation and rotation but no scaling. This is done by using Homogeneous Coordinate Transformation given by the formula below:
     ![](/home/shivam/workspace/UDACITY_PARTICLE_FILTER/solutions/1/image-resources/homogenous-coordinate-transformation.png)
+
+![]()
 
   where xm, ym represent the transformed observation, xc, yc represent the observations in vehicle's coordinate system and xp, yp the location of particle in global map coordinate system.
 
@@ -74,3 +78,4 @@ $ ./install-ubuntu.sh
 $ ./build.sh
 ```
 
+`NOTE: Run the Udacity simulator and check the results`
